@@ -5,13 +5,13 @@ window.onload = function () {
     if (!header || !body) return;
 
     var style  = window.getComputedStyle(header);
-    var margin = style.marginTop + style.marginBottom;
+    var margin = style.marginTop + style.marginBottom || 0;
 
     header.style.position = 'fixed';
     header.style.top      = 0;
     header.style.zIndex   = 10;
     header.style.width    = '100%';
-    body.style.marginTop  = header.offsetHeight + style + 'px';
+    body.style.marginTop  = header.offsetHeight + margin + 'px';
   } catch (e) {
     return;
   }
