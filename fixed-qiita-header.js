@@ -5,7 +5,7 @@ window.onload = function () {
     if (!header || !body) return;
 
     var style  = window.getComputedStyle(header);
-    var margin = style.marginTop + style.marginBottom || 0;
+    var margin = Number(style.marginBottom.replace('px', ''));
 
     header.style.position = 'fixed';
     header.style.top      = 0;
