@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Fixed Qiita Header",
-  "version": "1.0",
+  "version": "1.1",
   "content_scripts": [{
     "matches": ["http://qiita.com/*"],
     "js": ["fixed-qiita-header.js"]
