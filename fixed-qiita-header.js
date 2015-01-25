@@ -11,6 +11,7 @@ window.onload = function () {
     header.style.top      = 0;
     header.style.zIndex   = 10;
     header.style.width    = '100%';
+    header.style.backgroundColor = '#fff'
     body.style.marginTop  = header.offsetHeight + margin + 'px';
   } catch (e) {
     return;
