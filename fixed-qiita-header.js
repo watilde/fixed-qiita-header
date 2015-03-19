@@ -6,6 +6,8 @@ window.onload = function () {
 
     var style  = window.getComputedStyle(header);
     var margin = Number(style.marginBottom.replace('px', ''));
+    var feedPage = document.getElementsByClassName("feedPage")[0];
+    if (feedPage) feedPage.style.paddingTop = 20;
 
     header.style.position = 'fixed';
     header.style.top      = 0;
@@ -13,10 +15,6 @@ window.onload = function () {
     header.style.width    = '100%';
     header.style.backgroundColor = '#fff'
     body.style.marginTop  = header.offsetHeight + margin + 'px';
-    
-    if(f=document.getElementsByClassName("feedPage")[0]) {
-      f.style.paddingTop  = 20;
-    }
   } catch (e) {
     return;
   }
