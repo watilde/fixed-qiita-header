@@ -13,6 +13,10 @@ window.onload = function () {
     header.style.width    = '100%';
     header.style.backgroundColor = '#fff'
     body.style.marginTop  = header.offsetHeight + margin + 'px';
+    
+    if(f=document.getElementsByClassName("feedPage")[0]) {
+      f.style.paddingTop  = 20;
+    }
   } catch (e) {
     return;
   }
